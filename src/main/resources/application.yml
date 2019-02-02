@@ -1,0 +1,46 @@
+info:
+  config: Local
+  version: 1.0.1
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger.json
+
+management:
+  endpoints: 
+    web:
+      base-path: /
+
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+  info:
+    enabled: true
+
+spring:
+  application:
+    name: "crud-microservice"
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+      
+logging:
+  level:
+    com.companyname: DEBUG
+      
+swagger-info:
+  contact:
+    name: Joe Soap
+    email: joe.soap@whatever.com
+    url: http://whatever.com
+  api:
+    title: This is the title of the service
+    description: This is the description of the service
+    terms-of-service-url: http://terms-of-service.com/terms 
+    license: Apache License Version 2.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    
+    
